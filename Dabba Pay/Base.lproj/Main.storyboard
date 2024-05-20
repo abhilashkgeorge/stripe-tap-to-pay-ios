@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dabba_Pay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfr-gB-n56">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dabbalite" translatesAutoresizingMaskIntoConstraints="NO" id="yqh-UV-Q7c">
+                                        <rect key="frame" x="0.0" y="150" width="393" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="vjJ-gS-NoY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gEZ-ol-pga">
+                                        <rect key="frame" x="50" y="380" width="293" height="150"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lbv-lv-brk">
+                                                <rect key="frame" x="52" y="90" width="233" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dabba Lite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8U-4Y-NP9">
+                                                <rect key="frame" x="69.666666666666686" y="8" width="154" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLn-8w-PO3">
+                                                <rect key="frame" x="25" y="89" width="19" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Lbv-lv-brk" firstAttribute="centerY" secondItem="zLn-8w-PO3" secondAttribute="centerY" id="JpW-rz-Lyd"/>
+                                            <constraint firstAttribute="height" constant="150" id="Lz4-UC-CXK"/>
+                                            <constraint firstAttribute="bottom" secondItem="zLn-8w-PO3" secondAttribute="bottom" constant="25" id="QgU-ee-Lti"/>
+                                            <constraint firstItem="j8U-4Y-NP9" firstAttribute="centerX" secondItem="gEZ-ol-pga" secondAttribute="centerX" id="ili-kU-Vmw"/>
+                                            <constraint firstItem="zLn-8w-PO3" firstAttribute="leading" secondItem="gEZ-ol-pga" secondAttribute="leading" constant="25" id="jTi-UG-ZRs"/>
+                                            <constraint firstItem="Lbv-lv-brk" firstAttribute="leading" secondItem="zLn-8w-PO3" secondAttribute="trailing" constant="8" id="olR-Mr-Wam"/>
+                                            <constraint firstAttribute="trailing" secondItem="Lbv-lv-brk" secondAttribute="trailing" constant="8" id="u8n-eA-2Na"/>
+                                            <constraint firstItem="j8U-4Y-NP9" firstAttribute="top" secondItem="gEZ-ol-pga" secondAttribute="top" constant="8" id="wA6-t9-g3E"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9SS-e0-wV2">
+                                        <rect key="frame" x="50" y="737" width="293" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Proceed to Payment"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="9SS-e0-wV2" firstAttribute="leading" secondItem="yfr-gB-n56" secondAttribute="leading" constant="50" id="DQE-XX-NrW"/>
+                                    <constraint firstAttribute="bottom" secondItem="9SS-e0-wV2" secondAttribute="bottom" constant="80" id="FX8-Q9-UM0"/>
+                                    <constraint firstItem="yqh-UV-Q7c" firstAttribute="leading" secondItem="yfr-gB-n56" secondAttribute="leading" id="L9f-1a-6Ct"/>
+                                    <constraint firstAttribute="trailing" secondItem="gEZ-ol-pga" secondAttribute="trailing" constant="50" id="RKx-0a-XmE"/>
+                                    <constraint firstItem="gEZ-ol-pga" firstAttribute="leading" secondItem="yfr-gB-n56" secondAttribute="leading" constant="50" id="TTL-Jd-Smf"/>
+                                    <constraint firstAttribute="trailing" secondItem="yqh-UV-Q7c" secondAttribute="trailing" id="UDA-dU-a6A"/>
+                                    <constraint firstItem="yqh-UV-Q7c" firstAttribute="top" secondItem="yfr-gB-n56" secondAttribute="top" constant="150" id="UbT-TW-Trx"/>
+                                    <constraint firstItem="gEZ-ol-pga" firstAttribute="top" secondItem="yqh-UV-Q7c" secondAttribute="bottom" constant="50" id="Ytj-pc-mE3"/>
+                                    <constraint firstAttribute="trailing" secondItem="9SS-e0-wV2" secondAttribute="trailing" constant="50" id="nRB-w1-lL6"/>
+                                    <constraint firstItem="yqh-UV-Q7c" firstAttribute="centerX" secondItem="yfr-gB-n56" secondAttribute="centerX" id="vJu-uw-ggi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="yfr-gB-n56" secondAttribute="bottom" id="OkK-eZ-Rac"/>
+                            <constraint firstItem="yfr-gB-n56" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bZG-rb-90j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yfr-gB-n56" secondAttribute="trailing" id="me1-JV-4LQ"/>
+                            <constraint firstItem="yfr-gB-n56" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xua-8r-zdN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="liteImageView" destination="yqh-UV-Q7c" id="L0e-Om-dxs"/>
+                        <outlet property="mainView" destination="yfr-gB-n56" id="1vK-kj-wxi"/>
+                        <outlet property="paymentView" destination="gEZ-ol-pga" id="3ya-Vd-cN7"/>
+                        <outlet property="priceTextFeild" destination="Lbv-lv-brk" id="vrB-qU-Fk0"/>
+                        <outlet property="proceedPaymentButton" destination="9SS-e0-wV2" id="YuZ-oW-n2g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70.992366412213741" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dabbalite" width="501" height="248"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

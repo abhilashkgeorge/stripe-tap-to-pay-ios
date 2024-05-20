@@ -1,0 +1,6 @@
+framework module Pods_Dabba_Pay {
+  umbrella header "Pods-Dabba Pay-umbrella.h"
+
+  export *
+  module * { export * }
+}

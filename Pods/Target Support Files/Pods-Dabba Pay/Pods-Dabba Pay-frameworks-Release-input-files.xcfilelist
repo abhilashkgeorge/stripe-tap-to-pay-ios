@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Dabba Pay/Pods-Dabba Pay-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/synth-ios/Synth.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/StripeTerminal/StripeTerminal.framework/StripeTerminal

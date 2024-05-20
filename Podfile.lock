@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.9.1)
+  - StripeTerminal (3.5.0)
+  - synth-ios (1.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - StripeTerminal (~> 3.0)
+  - synth-ios
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - StripeTerminal
+    - synth-ios
+
+SPEC CHECKSUMS:
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  StripeTerminal: 107cb1815738accbaa54179411cd916ed129b044
+  synth-ios: b91d9176ecc7ff791d94df9aedafbf5a8c00f965
+
+PODFILE CHECKSUM: 1d17d1e07a08970ce87dd1e3480eceb25465bef5
+
+COCOAPODS: 1.14.3
